@@ -1,0 +1,18 @@
+C:\Users\Káč\Documents\Visual Studio 2010\Projects\WindowsFormsApplication4\WindowsFormsApplication4\bin\Release\Bomberman.exe
+C:\Users\Káč\Documents\Visual Studio 2010\Projects\WindowsFormsApplication4\WindowsFormsApplication4\bin\Release\Bomberman.pdb
+C:\Users\Káč\Documents\Visual Studio 2010\Projects\WindowsFormsApplication4\WindowsFormsApplication4\obj\x86\Release\WindowsFormsApplication4.MenuWindow.resources
+C:\Users\Káč\Documents\Visual Studio 2010\Projects\WindowsFormsApplication4\WindowsFormsApplication4\obj\x86\Release\WindowsFormsApplication4.GameWindow.resources
+C:\Users\Káč\Documents\Visual Studio 2010\Projects\WindowsFormsApplication4\WindowsFormsApplication4\obj\x86\Release\Bomberman.Properties.Resources.resources
+C:\Users\Káč\Documents\Visual Studio 2010\Projects\WindowsFormsApplication4\WindowsFormsApplication4\obj\x86\Release\Application.csproj.GenerateResource.Cache
+C:\Users\Káč\Documents\Visual Studio 2010\Projects\WindowsFormsApplication4\WindowsFormsApplication4\obj\x86\Release\Bomberman.exe
+C:\Users\Káč\Documents\Visual Studio 2010\Projects\WindowsFormsApplication4\WindowsFormsApplication4\obj\x86\Release\Bomberman.pdb
+C:\Users\kateb\Documents\skola\Brainerman\WindowsFormsApplication4\bin\Release\Bomberman.exe
+C:\Users\kateb\Documents\skola\Brainerman\WindowsFormsApplication4\bin\Release\Bomberman.pdb
+C:\Users\kateb\Documents\skola\Brainerman\WindowsFormsApplication4\obj\x86\Release\Application.csprojAssemblyReference.cache
+C:\Users\kateb\Documents\skola\Brainerman\WindowsFormsApplication4\obj\x86\Release\WindowsFormsApplication4.MenuWindow.resources
+C:\Users\kateb\Documents\skola\Brainerman\WindowsFormsApplication4\obj\x86\Release\WindowsFormsApplication4.GameWindow.resources
+C:\Users\kateb\Documents\skola\Brainerman\WindowsFormsApplication4\obj\x86\Release\Bomberman.Properties.Resources.resources
+C:\Users\kateb\Documents\skola\Brainerman\WindowsFormsApplication4\obj\x86\Release\Application.csproj.GenerateResource.cache
+C:\Users\kateb\Documents\skola\Brainerman\WindowsFormsApplication4\obj\x86\Release\Application.csproj.CoreCompileInputs.cache
+C:\Users\kateb\Documents\skola\Brainerman\WindowsFormsApplication4\obj\x86\Release\Bomberman.exe
+C:\Users\kateb\Documents\skola\Brainerman\WindowsFormsApplication4\obj\x86\Release\Bomberman.pdb

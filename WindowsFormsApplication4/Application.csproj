@@ -1,0 +1,490 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D9495F29-C273-405C-A989-798EB0B8F405}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bomberman</RootNamespace>
+    <AssemblyName>Bomberman</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="KeyboardInfo.cs" />
+    <Compile Include="Forms\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainClasses\Bomb.cs" />
+    <Compile Include="MainClasses\Bonus.cs" />
+    <Compile Include="MainClasses\Exit.cs" />
+    <Compile Include="MainClasses\FireTile.cs" />
+    <Compile Include="MainClasses\Hero.cs" />
+    <Compile Include="MainClasses\HeroState.cs" />
+    <Compile Include="MainClasses\Map.cs" />
+    <Compile Include="MainClasses\Monster.cs" />
+    <Compile Include="MainClasses\Monster1.cs" />
+    <Compile Include="MainClasses\Monster2.cs" />
+    <Compile Include="MainClasses\Monster3.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\blackboard.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\matfyzacka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\matfyzak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\test.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\GameWindowBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\buttonNewGame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\button1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\MenuWindowBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\button2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\button3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\button4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\buttonRules.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\buttonRules2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\buttonQuit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\buttonContinue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\buttonBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ButtonBack2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\buttonback3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\buttonForward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\time.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\life.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\score.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\matfyzakBig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\matfyzakBig2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\matfyzackaBig2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\GameWindowBackground1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\GameWindowBackground2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\GameWindowBackground3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\GameWindowBackground4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\GameWindowBackground5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\GameWindowBackground6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\rules.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\buttonClose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\soundOn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\soundOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\button4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\bonusBomb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\bonusFire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\bonusLife.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\bonusSpeed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\brain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\buttonBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\buttonClose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\buttonContinue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\buttonForward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\buttonNewGame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\buttonQuit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\buttonRules.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\exitClosed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\exitOpened.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\fireCenter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\fireDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\fireHorizontal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\fireLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\fireRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\fireUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\fireVertical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\fireWall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\GameWindowBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\matfyzacka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\matfyzackaBig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\matfyzak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\matfyzakBig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\MenuWindowBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\monster1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\monster1dead.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\monster2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\monster2Dead.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\monster3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\monster3Dead.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\rules.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\soundOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\soundOn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\tempWall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Game\wall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Sounds\beep.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Sounds\beepFinal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Sounds\gameWindowSound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Sounds\choice.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Sounds\loss.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Sounds\menuWindowSound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Sounds\win.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\bonusBomb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\bonusFire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\bonusLife.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\bonusSpeed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\brain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\buttonBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\buttonClose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\buttonContinue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\buttonForward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\buttonNewGame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\buttonQuit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\buttonRules.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\exitClosed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\exitOpened.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\fireCenter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\fireDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\fireHorizontal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\fireLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\fireRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\fireUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\fireVertical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\fireWall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\GameWindowBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\matfyzacka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\matfyzackaBig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\matfyzak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\matfyzakBig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\matfyzakIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\MenuWindowBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\monster1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\monster1dead.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\monster2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\monster2Dead.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\monster3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\monster3Dead.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\rules.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\soundOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\soundOn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\tempWall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pictures\wall.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
