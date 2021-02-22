@@ -1,5 +1,5 @@
 # Brainerman
-Game dedicated to all the Matfyzaks.
+**Game dedicated to all the Matfyzáks**.
 
 Run the Bomberman.exe. Click the Nápověda to see what's going on.
 
