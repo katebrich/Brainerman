@@ -1,6 +1,12 @@
 # Brainerman
-**Game dedicated to all the Matfyzáks**.
+**Game dedicated to all the Matfyzáks**
 
-Run the Bomberman.exe. Click the Nápověda to see what's going on.
+Use your brain to fight agains the monsters!
 
-This was my very first C# project created in the first year of my Bachelors studies.
+This is my very first C# project created in the first year of my Bachelors studies.
+
+Run Bomberman.exe. Click Nápověda to see what's going on.
+
+<img src="Napoveda.PNG" width="500">
+
+<img src="Game.PNG" width="500">
